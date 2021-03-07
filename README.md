@@ -61,4 +61,10 @@ git push
 
 ***Experience***
 
-<img alt="This is a screenshot from an iPhone of the experience page and on this part of the page it displays a project called connect four with the Information and an image of the project." src="https://github.com/lwrgithub/LWRGitHub.github.io/blob/master/public/images/readme/experience-pg-mobile.png" wi
+<img alt="This is a screenshot from an iPhone of the experience page and on this part of the page it displays a project called connect four with the Information and an image of the project." src="https://github.com/lwrgithub/LWRGitHub.github.io/blob/master/public/images/readme/experience-pg-mobile.png" width="22%" align="right" />
+<img alt="Screenshot of experience page on the desktop this image has quite a few bootstraps cards that are stacked on top of each other and inside of his cards a different coding projects with images." src="https://github.com/lwrgithub/LWRGitHub.github.io/blob/master/public/images/readme/experience-pg-desktop.png" width="73%" />
+
+***Contact***
+
+<img alt="Clearly a screenshot on an iPhone of the contact page on Logan's portfolio website.Includes contact info and a map from Google of San Francisco with links at the bottom to get up and getting resumes." src="https://github.com/lwrgithub/LWRGitHub.github.io/blob/master/public/images/readme/contact-pg-mobile.png" width="22%" align="right" />
+<img alt="Screenshot of the desktop portfolio website contact page. Includes contact info and a map from Google of San Francisco with links at the bottom to github LinkedIn and a résumé with a copy right as well." src="https://github.com/lwrgithub/LWRGitHub.github.io/blob/master/public/images/readme/contact-pg-desktop.png" width="73%" />
