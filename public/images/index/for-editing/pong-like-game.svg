@@ -50,4 +50,53 @@
                     leftPressed = false;
                 }
             }
-            mouseMov
+            mouseMoveHandler = e =&gt; {
+                let relativeX = e.clientX - canvas.offsetLeft;
+                if(relativeX &gt; 0 &amp;&amp; relativeX &lt; canvas.width) {
+                    paddleX = relativeX - paddleWidth/2;
+                }
+            }
+            collisionDetection = () =&gt; {
+                for(let c = 0; c &lt; brickColumnCount; c++) {
+                    for(let r = 0; r &lt; brickRowCount; r++) {
+                        let b = bricks[c][r];
+                        if(b.status == 1) {
+                            if(x &gt; b.x &amp;&amp; x &lt; b.x+brickWidth &amp;&amp; y &gt; b.y &amp;&amp; y &lt; b.y + brickHeight) {
+                                dy = -dy;
+                                b.status = 0;
+                                score++;
+                                if(score == brickRowCount * brickColumnCount) {
+                                    alert(`YOU WIN, CONGRATS!`);
+                                    document.location.reload();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            drawBall = () =&gt; {
+                ctx.beginPath();
+                ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+                ctx.fillStyle = '#cc33ff';
+                if(score % 2 === 0){
+                    ctx.fillStyle = '#FFFF00';
+                }
+                ctx.fill();
+                ctx.closePath();
+            }
+            drawPaddle = () =&gt; {
+                ctx.beginPath();
+                ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+                ctx.fillStyle = '#3385ff';
+                if(score % 2 === 0){
+                    ctx.fillStyle = '#cc33ff';
+                }
+                ctx.fill();
+                ctx.closePath();
+            }
+            drawBricks = () =&gt; {
+                for(let c = 0; c &lt; brickColumnCount; c++) {
+                    for(let r = 0; r &lt; brickRowCount; r++) {
+                        if(bricks[c][r].status == 1) {
+                            let brickX = (r * (brickWidth+brickPadding)) + brickOffsetLeft;
+                            let brickY = (c * (brickHeight+brickPadding)) + brickOffsetTop;
