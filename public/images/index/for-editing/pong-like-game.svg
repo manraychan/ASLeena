@@ -100,3 +100,61 @@
                         if(bricks[c][r].status == 1) {
                             let brickX = (r * (brickWidth+brickPadding)) + brickOffsetLeft;
                             let brickY = (c * (brickHeight+brickPadding)) + brickOffsetTop;
+                            bricks[c][r].x = brickX;
+                            bricks[c][r].y = brickY;
+                            ctx.beginPath();
+                            ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                            ctx.fillStyle = '#3385ff';
+                            if(score % 2 === 0){
+                                ctx.fillStyle = '#cc33ff';
+                            }
+                            ctx.fill();
+                            ctx.closePath();
+                        }
+                    }
+                }
+            }
+            drawScore = () =&gt; {
+                ctx.font = '16px Arial';
+                ctx.fillStyle = '#0095DD';
+                ctx.fillText(`Score: ${score}`, 8, 20);
+            }
+            drawLives = () =&gt; {
+                ctx.font = '16px Arial';
+                ctx.fillStyle = '#0095DD';
+                ctx.fillText(`Lives: ${lives}`, canvas.width-65, 20);
+            }
+            draw = () =&gt; {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                drawBricks();
+                drawBall();
+                drawPaddle();
+                drawScore();
+                drawLives();
+                collisionDetection();
+                if(x + dx &gt; canvas.width-ballRadius || x + dx &lt; ballRadius) {
+                    dx = -dx;
+                }
+                if(y + dy &lt; ballRadius) {
+                    dy = -dy;
+                }
+                else if(y + dy &gt; canvas.height-ballRadius) {
+                    if(x &gt; paddleX &amp;&amp; x &lt; paddleX + paddleWidth) {
+                        dy = -dy;
+                    } else {
+                        lives--;
+                        if(!lives) {
+                             document.location.reload();
+                        } else {
+                            x = canvas.width/2;
+                            y = canvas.height-30;
+                            dx = 3;
+                            dy = -3;
+                            paddleX = (canvas.width-paddleWidth)/2;
+                        }
+                    }
+                }
+                if(rightPressed &amp;&amp; paddleX &lt; canvas.width-paddleWidth) {
+                    paddleX += 7;
+                }
+                else if(leftPressed &amp;&amp; paddleX 
