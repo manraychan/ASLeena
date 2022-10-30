@@ -16,4 +16,13 @@ const ExtendSkills = (props) => {
                     <h3 id="ext-knowledge-bg" className="badge badge-pill badge-light">Proficient</h3>
                     <p>{props.experience.proficient}</p>
                 </div>
-            
+                <div className="col-sm-6 col-md">
+                    <h3 id="ext-knowledge-bg" className="badge badge-pill badge-light">Novice</h3>
+                    <p>{props.experience.novice}</p>
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default ExtendSkills;
