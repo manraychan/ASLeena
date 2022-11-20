@@ -1,0 +1,22 @@
+
+body {
+    font-family: Roboto, sans-serif;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .row,
+footer .row {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    margin: 0;
+}
+
+nav {
