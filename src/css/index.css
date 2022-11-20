@@ -20,3 +20,239 @@ h1 {
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    padding: 0 9px;
+    margin: 0;
+}
+
+.jumbotron {
+    display: flex;
+    align-items: center;
+    background-image: url('https://s3.amazonaws.com/codecademy-content/projects/personal_portfolio/background.jpeg');
+    background-size: cover;
+    color: #ffffff;
+    height: 400px;
+}
+
+.jumbotron h2 {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+
+@media (max-width: 35em) {
+    .jumbotron h2 {
+        font-size: 55px;
+    }
+}
+
+.jumbotron h3 {
+    margin: 0 0 20px;
+    color: #fff;
+}
+
+section .row img {
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.col-md-6 {
+    margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+    border-radius: 2px;
+    border: 0px;
+    color: #fbd1d5;
+    background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+    color: #ffffff;
+    background-color: #fbd1d5;
+}
+
+.btn-secondary {
+    background-color: #2a70e0;
+    color: #ffffff;
+    margin: 0 0 30px;
+}
+
+.portrait {
+    width:  350px;
+    height: 300px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figure {
+    margin-bottom: 30px;
+}
+
+footer {
+    font-size: 12px;
+    padding: 20px 0;
+}
+
+footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul {
+    list-style: none;
+}
+
+button {
+    background-color: #1a75ff;
+    color: white;
+    border: 1px solid #52667a;
+    border-radius: 8px;
+    transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin: 25px;
+    padding-top: 4px;
+    padding-right: 15px;
+    padding-bottom: 4px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: white; 
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)
+}
+
+.title{
+    font-size: 20px; 
+    font-weight: bold;
+    
+}
+
+#LWR{
+    color:black; 
+    text-decoration:none;
+    font-size: 35px;
+}
+
+li{
+    margin-right: 20px;
+}
+
+* {box-sizing:border-box}
+
+/* -------------------Slide Show-------------------- */
+.slide-container {
+    width: 70%;
+    margin: auto; 
+}
+  
+h3 {
+    text-align: center; 
+}
+  
+.each-slide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    height: 300px;
+  }
+  
+.each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+    align-items: center;
+}
+  
+.each-fade {
+    display: flex;
+}
+  
+.each-fade .image-container {
+    width: 75%;
+    overflow: hidden;
+}
+  
+.each-fade .image-container img {
+    width: 100%;
+}
+  
+.each-fade h2 {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: #adceed;
+}
+  /* -------------------/Slide Show-------------------- */
+
+
+/* -----------------  Experience Page Cards   ------------------ */
+@media (min-width: 36em) {
+    .card-columns {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (min-width: 48em) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+.card-header{
+    background-color: rgba(0,0,0,.045);
+    /* ------ Badge font-size ------- */
+    font-size: 11px;
+    padding: 0;
+}
+/* -----------------  /Experience Page Cards   ------------------ */
+
+/* ----------------   Skill Level Badges   ------------------ */
+#main-lang-bg{
+    font-size: 10px;
+}
+
+#skill-bg{
+    font-size: 7px;
+}
+#ext-knowledge-bg{
+    font-size: 25px
+}
+/* ----------------   /Skill Level Badges   ------------------ */
+
+/* ------------ Resume Button ----------------- */
+#resume-btn{
+    width: 50px;
+    height: 46px;
+}
+/* ------------ /Resume Button ----------------- */
+
+/* --------- p5*js cards page -------------- */
+#p5-jumbotron{
+    height: 200px;
+}
+
+#p5-card-head{
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.05);
+}
+/* --------- p5*js cards page -------------- */
