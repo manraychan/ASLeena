@@ -517,3 +517,447 @@ export const tech = {
     npm: {
         id: 'npm',
         langType: false, 
+        level: expertise.proficient
+    },
+    yarn: {
+        id: 'yarn',
+        langType: false, 
+        level: expertise.proficient
+    },
+    chromeDev: {
+        id: 'Chrome DevTools',
+        langType: false, 
+        level: expertise.proficient
+    },
+    google: {
+        font: {
+            id: 'Google Fonts', 
+            langType: false, 
+            level: expertise.proficient
+        },
+        analytic: {
+            id: 'Google Analytics', 
+            langType: false, 
+            level: expertise.proficient
+        },
+        adsense: {
+            id: 'Google AdSense', 
+            langType: false, 
+            level: expertise.proficient
+        },
+        // gwt: {
+        //     id: 'GWT', 
+        //     langType: false, 
+        //     level: expertise.novice
+        // },
+        map: {
+            id: 'Google Maps', 
+            langType: false, 
+            level: expertise.proficient
+        },
+        // cloud: {
+        //     id: 'Google Cloud', 
+        //     langType: false, 
+        //     level: expertise.novice
+        // },
+    },
+    // wordPr: {
+    //     id: 'WordPress', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // phaser: {
+    //     id: 'Phaser', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    jquery: {
+        id: 'jQuery', 
+        langType: mainLang.js.id, 
+        level: expertise.novice
+    },
+    // webVtt: {
+    //     id: 'WebVTT', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // mediaEl: {
+    //     id: 'MediaElement.js', 
+    //     langType: mainLang.js.id, 
+    //     level: expertise.novice
+    // },
+    // mp4: {
+    //     id: 'MP4', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    // audio: {
+    //     mp3: {
+    //         id: "MP3", 
+    //         langType: false, 
+    //         level: expertise.proficient
+    //     },
+    //     ogg: {
+    //         id: 'OGG', 
+    //         langType: false, 
+    //         level: expertise.proficient
+    //     }
+    // },
+    // vlcMedia: {
+    //     id: 'VLC Media Player', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    json: {
+        id: "JSON", 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // lock: {
+    //     id: 'lock', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // jsx: {
+    //     id: 'JSX', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    // p5: {
+    //     id: 'P5.js', 
+    //     langType: mainLang.js.id, 
+    //     level: expertise.novice
+    // },
+    shell: {
+        id: 'Shell Code', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    unixShell: {
+        id: 'UNIX Shell', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // c_sharp: {
+    //     id: 'C#', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // unity: {
+    //     id: 'Unity', 
+    //     langType: mainLang.c_sharp.id, 
+    //     level: expertise.novice
+    // },
+    // powerSh: {
+    //     id: 'PowerShell', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // xml: {
+    //     id: 'XML', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // aspNet: {
+    //     id: 'ASP.NET', 
+    //     langType: false, //mainLang.c_sharp.id, 
+    //     level: expertise.novice
+    // },
+    terminal: {
+        id: 'Terminal', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    wix: {
+        id: 'Wix', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    goDaddy: {
+        id: 'Go Daddy', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    wireFrames: {
+        id: 'Wireframes', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    figma: {
+        id: 'Figma', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    asyncAwait: {
+        id: 'Async/Await', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // http: {
+    //     id: 'http/https', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    // wShark: {
+    //     id: 'Wire Shark',
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    unixCLI: {
+        id: 'UNIX CLI',
+        langType: false, 
+        level: expertise.proficient
+    },
+    // aws: {
+    //     id: 'AWS', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // cloud9: {
+    //     id: 'Cloud9', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // nowVercel: {
+    //     id: 'Now Vercel', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // netlify: {
+    //     id: 'Netlify', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // testDev: {
+    //     id: 'Test-Driven Development', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    dataAnaly: {
+        id: 'Data Analytics', 
+        langType: false, 
+        level: expertise.novice
+    },
+    // devOps: {
+    //     id: 'DevOps', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    webAccess: {
+        id: 'Web Accessibility', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    webOptimiz: {
+        id: 'Web Optimization', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    preformOptimiz: {
+        id: 'Performance Optimization/Tuning', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // flexbox: {
+    //     id: 'Flexbox', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    responsive: {
+        id: 'Responsive Design/Layout', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // balsamiq: {
+    //     id: 'Balsamiq', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    sql: {
+        // sql:{
+        //     id: 'SQL', 
+        //     langType: false, 
+        //     level: expertise.novice
+        // },
+        // alchemy: {
+        //     id: 'SQLAlchemy', 
+        //     langType: false, 
+        //     level: expertise.novice
+        // }
+    },
+    // ajax: {
+    //     id: 'AJAX', 
+    //     langType: mainLang.js.id, 
+    //     level: expertise.proficient
+    // },
+    vSCode: {
+        id: 'VS Code', 
+        langType: false, 
+        level: expertise.expert
+    },
+    adam: {
+        id: 'Adam', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    brackets:{
+        id: 'Brackets',
+        langType: false,
+        level: expertise.novice
+    },
+    vS: {
+        id: 'Visual Studio', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // iHWare: {
+    //     id: 'Hardware Install', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    // cfgHWare: {
+    //     id: 'Hardware Configuration', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    // rMComp: {
+    //     id: 'Repair & Maintain Computer System in a Typical Office Environment', 
+    //     langType: false, 
+    //     level: expertise.proficient
+    // },
+    ftp: {
+        id: 'FTP (File Transfer Protocol)', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    fZilla: {
+        id: 'File Zilla', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    gitHubCP: {
+        id: 'GitHub Copilot', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    // docker: {
+    //     id: 'Docker', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    windows: {
+        id: 'Windows', 
+        langType: false, 
+        level: expertise.proficient
+    },
+    mac: {
+        id: 'Mac', 
+        langType: false, 
+        level: expertise.expert
+    },
+    Linux: {
+        id: 'Linux', 
+        langType: false, 
+        level: expertise.novice
+    },
+    // ios: {
+    //     id: 'iOS', 
+    //     langType: mainLang.swift.id, 
+    //     level: expertise.novice
+    // },
+    // browserify: {
+    //     id: 'Browserify', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // SEO: {
+    //     id: 'SEO', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    // sass: {
+    //     id: 'Sass', 
+    //     langType: false, 
+    //     level: expertise.novice
+    // },
+    api: {
+        api: {
+            id: 'API', 
+            langType: false, 
+            level: expertise.proficient
+        },
+        fetch: {
+            id: 'FETCH API', 
+            langType: false, 
+            level: expertise.proficient
+        },
+        rest: {
+            id: 'REST API', 
+            langType: false, 
+            level: expertise.proficient
+        }
+    },
+    garageband: {
+        id: 'Garageband',
+        level: expertise.proficient
+    },
+    // milkyTrack: {
+    //     id: 'Milky Tracker',
+    //     level: expertise.novice
+    // },
+    imove: {
+        id: 'iMove',
+        level: expertise.novice
+    },
+    markdown: {
+        id:'Markdown',
+        level: expertise.proficient
+    },
+};
+
+// name: {
+//     id: '', 
+//     langType: false, 
+//     level: expertise.
+// }
+
+export const skill = {
+    drawing: {
+        id: 'Drawing', 
+        level: expertise.novice
+    },
+    math: {
+        id: 'Math', 
+        level: expertise.proficient
+    },
+    githubEd: {
+        comUsingMarkdown: {
+            id:'Communicating using Markdown',
+            level: expertise.proficient
+        },
+        upload: {
+            id: 'Uploading your project to GitHub', 
+            level: expertise.expert
+        },
+        intro: {
+            id: 'Introduction to GitHub', 
+            level: expertise.expert
+        },
+        // circleCI: {
+        //     id: 'Continuous integration with CircleCI', 
+        //     level: expertise.proficient
+        // },
+    },
+    // darkRoomPhoto: {
+    //     id: 'Dark Room Photography',
+    //     level: expertise.novice
+    // },
+    // ASL: {
+    //     id: 'American Sign Language',
+    //     level: expertise.novice
+    // },
+    highSpeedKey: {
+        id: 'High-Speed Keyboarding ',
+        level: expertise.expert
+    }
+}
